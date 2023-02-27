@@ -22,3 +22,8 @@ Waiting for 3 seconds...
 Scanning for new devices on the network...
 Scan for new devices on the network completed.
 ```
+#### To run this script as a cronjob in the background, you can add the following line to your crontab file (crontab -e):
+```
+
+* * * * * /path/to/network_monitor.sh >/dev/null 2>&1 &
+```
